@@ -4,6 +4,8 @@ A Home Assistant custom integration for Bluetooth temperature and humidity senso
 
 Home Assistant's built-in ThermoBeacon integration does not recognise these sensors. The older models it supports put two extra bytes at the start of their broadcast; ThermoBeacon2 sensors leave them out, so the built-in parser rejects every broadcast. This integration reads the newer layout. It only listens to broadcasts, never connects to the sensor, and needs no cloud account or phone app.
 
+![A ThermoBeacon2 sensor in Home Assistant: humidity, temperature and battery voltage](docs/images/device-page.webp)
+
 ## Supported sensors
 
 A sensor is supported if its Bluetooth broadcast has all of these:
